@@ -146,9 +146,9 @@ def get_inbox_route(recipient: str):
 #   @app.route('/mail/sent/<sender>', ...)
 
 @app.route('/mail/inbox/<sender>',methods=['GET'])
-def get_inbox_route(sender: str):
+def get_sent_route(sender: str):
     
-    res = jsonify(get_inbox(sender))
+    res = jsonify(get_sent(sender))
     res.status_code = 200
     return res
 
