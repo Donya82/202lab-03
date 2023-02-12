@@ -24,11 +24,20 @@ def load_mail() -> List[Dict[str, str]]:
 
 def save_mail(mail: List[Dict[str, str]]) -> None:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    Summary: saves mail that is loaded in from json file
+    
+    Returns:
+    nothing
+    
     """
     thisdir.joinpath('mail_db.json').write_text(json.dumps(mail, indent=4))
 
 def add_mail(mail_entry: Dict[str, str]) -> str:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    
+    
+    Returns:
+    the mail ID (str)
     """
     mail = load_mail()
     mail.append(mail_entry)
@@ -38,6 +47,11 @@ def add_mail(mail_entry: Dict[str, str]) -> str:
 
 def delete_mail(mail_id: str) -> bool:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+  
+    
+    
+    Returns:
+    bool: True if the mail was deleted successfully, False otherwise
     """
     mail = load_mail()
     for i, entry in enumerate(mail):
@@ -50,6 +64,9 @@ def delete_mail(mail_id: str) -> bool:
 
 def get_mail(mail_id: str) -> Optional[Dict[str, str]]:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    
+    
+    
     """
     mail = load_mail()
     for entry in mail:
