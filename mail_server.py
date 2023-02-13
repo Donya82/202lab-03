@@ -34,10 +34,10 @@ def save_mail(mail: List[Dict[str, str]]) -> None:
 
 def add_mail(mail_entry: Dict[str, str]) -> str:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
-    
+    Summary: adds mail to the inbox 
     
     Returns:
-    the mail ID (str)
+    string: the mail ID 
     """
     mail = load_mail()
     mail.append(mail_entry)
@@ -47,7 +47,7 @@ def add_mail(mail_entry: Dict[str, str]) -> str:
 
 def delete_mail(mail_id: str) -> bool:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
-  
+    Summary: deletes maill that has been loaded or saved 
     
     
     Returns:
@@ -64,8 +64,10 @@ def delete_mail(mail_id: str) -> bool:
 
 def get_mail(mail_id: str) -> Optional[Dict[str, str]]:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    Summary: gets mail related to a mail id
     
-    
+    Returns:
+    string: the contents of the mail 
     
     """
     mail = load_mail()
@@ -77,6 +79,12 @@ def get_mail(mail_id: str) -> Optional[Dict[str, str]]:
 
 def get_inbox(recipient: str) -> List[Dict[str, str]]:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    Summary: gets all the mail from a certain recipient
+    
+    Returns:
+    list: all mail sent to a recipient 
+    
+    
     """
     mail = load_mail()
     inbox = []
@@ -88,6 +96,10 @@ def get_inbox(recipient: str) -> List[Dict[str, str]]:
 
 def get_sent(sender: str) -> List[Dict[str, str]]:
     """TODO: fill out this docstring (using the load_mail docstring as a guide)
+    Summary: gets all the mail from a certain sender
+    
+    Returns:
+    list: all mail sent by a sender 
     """
     mail = load_mail()
     sent = []
