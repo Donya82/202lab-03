@@ -36,10 +36,10 @@ def get_inbox(recipient: str) -> None:
     Uses the name of the reciepient to get the mail sent to that recipient
     
     Args:
-        recipient (str): The recipient of the mail
+    recipient (str): The recipient of the mail
 
     Returns:
-    prints the mail sent to recipient
+    list: prints the mail sent to recipient
     
     
     """
@@ -48,13 +48,13 @@ def get_inbox(recipient: str) -> None:
 
 def get_sent(sender: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-        Uses the name of the sender to get the mail sent by that sender
+    Uses the name of the sender to get the mail sent by that sender
     
     Args:
-        sender (str): The sender of the mail
+    sender (str): The sender of the mail
 
     Returns:
-    prints the mail sent by sender
+    list: prints the mail sent by sender
     
     
     """
@@ -66,10 +66,10 @@ def get_mail(mail_id: str) -> None:
     Uses the mail id to get the email you are looking for 
     
     Args:
-        mail id (str): The id of the email you are looking for
+    mail id (str): The id of the email you are looking for
 
     Returns:
-    prints the email related to the mail id 
+    string: prints the email related to the mail id 
     
     
     
@@ -82,10 +82,10 @@ def delete_mail(mail_id: str) -> None:
     Uses the mail id to delete the email you are want
     
     Args:
-        mail id (str): The id of the email you are looking for
+    mail id (str): The id of the email you are looking for
 
     Returns:
-    nothing
+    bool: True if the mail was deleted successfully, False otherwise
     
     """
     response = requests.delete(f'{SERVER}/mail/{mail_id}')
