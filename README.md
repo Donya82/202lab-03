@@ -2,25 +2,23 @@
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo and clone it to your machine to get started!
 
 ## Team Members
-- team member 1
-- team member 2
+- Donya Badamchi
+- Melissa Shun
 
 ## Lab Question Answers
 
 Question 1: Why are RESTful APIs scalable?
+
 RESTful APIs are scalable beacaus the REST optimizes client-server interactions, Statelessness takes away server load, and Well-managed caching removed unised client server interactions, allowig for scalability. 
 
 (https://aws.amazon.com/what-is/restful-api/)
 
-Question 2: According to the definition of “resources” provided in the AWS article above,
-What are the resources the mail server is providing to clients?
-Text 
+Question 2: According to the definition of “resources” provided in the AWS article above, What are the resources the mail server is providing to clients?
+Answer for 
 
-(https://aws.amazon.com/what-is/restful-api/)
+Resources provided by the mail server include the mail received by a client
 
-Question 3: What is one common REST Method not used in our mail server? How could
-we extend our mail server to use this method?
-
+Question 3: the PUT method is not used on the mail server. Perhaps it can be implemented by adding a new recipient or sender address (updating sender, or CC'ing someone)? 
 
 
 Question 4: Why are API keys used for many RESTful APIs? What purpose do they
