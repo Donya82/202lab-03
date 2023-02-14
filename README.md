@@ -18,7 +18,10 @@ Answer for
 
 Resources provided by the mail server include the mail received by a client
 
-Question 3: the PUT method is not used on the mail server. Perhaps it can be implemented by adding a new recipient or sender address (updating sender, or CC'ing someone)? 
+Question 3: What is one common REST Method not used in our mail server? How could
+we extend our mail server to use this method?
+
+the PUT method is not used on the mail server. Perhaps it can be implemented by adding a new recipient or sender address (updating sender, or CC'ing someone)? 
 
 
 Question 4: Why are API keys used for many RESTful APIs? What purpose do they
